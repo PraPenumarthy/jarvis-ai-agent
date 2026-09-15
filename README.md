@@ -6,16 +6,14 @@ Utilizes embedded web-scraping and Google AI Studio Gemini API keys to dynamical
 ^^ In order for the gemini-api key to work, you need to create your OWN key through Google AI Studio - otherwise it will not work.
 
 ** The voice index is mac-os specific **
-Utilize the following for a comprehensive list of voices:
 
-import pyttsx3
+# Code for comprehensive list of voices:
+    import pyttsx3
 
-engine = pyttsx3.init()
+    engine = pyttsx3.init()
 
-voices = engine.getProperty('voices')
+    voices = engine.getProperty('voices')
 
-for index, voice in enumerate(voices):
-
-    # Print the voice index number and its description
+    for index, voice in enumerate(voices):
     
-    print(f"Index: {index} | Name: {voice.name} | Languages: {voice.languages}")
+        print(f"Index: {index} | Name: {voice.name} | Languages: {voice.languages}")
