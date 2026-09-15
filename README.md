@@ -9,11 +9,8 @@ Utilizes embedded web-scraping and Google AI Studio Gemini API keys to dynamical
 
 # Code for comprehensive list of voices:
     import pyttsx3
-
     engine = pyttsx3.init()
-
     voices = engine.getProperty('voices')
 
     for index, voice in enumerate(voices):
-    
         print(f"Index: {index} | Name: {voice.name} | Languages: {voice.languages}")
